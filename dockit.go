@@ -9,7 +9,6 @@ import (
 var _ = log.Print
 
 func main() {
-
 	config := flag.String("config", "config.json", "json config")
 	address := flag.String("address", "unix:///var/run/docker.sock", "docker address")
 	pidPath := flag.String("pidPath", "/var/run/dockit-containers", "path to store pids in")
