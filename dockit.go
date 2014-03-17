@@ -9,10 +9,11 @@ import (
 var _ = log.Print
 
 func main() {
+
 	config := flag.String("config", "config.json", "json config")
 	address := flag.String("address", "unix:///var/run/docker.sock", "docker address")
 	pidPath := flag.String("pidPath", "/var/run/dockit-containers", "path to store pids in")
-	service := flag.String("service", "", "service name")
+	service := flag.String("service", "", "service name ")
 	start := flag.Bool("start", false, "start service")
 	stop := flag.Bool("stop", false, "stop service")
 	flag.Parse()
